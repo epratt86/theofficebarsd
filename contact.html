@@ -2,13 +2,18 @@
 <html lang="en">
   <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-130550866-1"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-130550866-1"
+    ></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-      gtag('config', 'UA-130550866-1');
+      gtag("config", "UA-130550866-1");
     </script>
 
     <meta charset="UTF-8" />
@@ -51,24 +56,24 @@
     </div>
 
     <aside class="nav-sidebar">
-        <ul>
-          <li><a href="index">Home</a></li>
-          <li><a href="events">Events</a></li>
-          <li><a href="contact" class="active">Contact</a></li>
-          <div id="social-icons">
-            <a href="https://www.facebook.com/theofficebarsd" target="_blank"
-              ><i class="fab fa-facebook"></i
-            ></a>
-            <a href="https://www.instagram.com/theofficebarsd" target="_blank"
-              ><i class="fab fa-instagram px-2"></i
-            ></a>
-            <a href="https://www.twitter.com/theofficebarsd" target="_blank"
-              ><i class="fab fa-twitter"></i
-            ></a>
-          </div>
-          <li><span>@theofficebarsd</span></li>
-        </ul>
-      </aside>
+      <ul>
+        <li><a href="index">Home</a></li>
+        <li><a href="events">Events</a></li>
+        <li><a href="contact" class="active">Contact</a></li>
+        <div id="social-icons">
+          <a href="https://www.facebook.com/theofficebarsd" target="_blank"
+            ><i class="fab fa-facebook"></i
+          ></a>
+          <a href="https://www.instagram.com/theofficebarsd" target="_blank"
+            ><i class="fab fa-instagram px-2"></i
+          ></a>
+          <a href="https://www.twitter.com/theofficebarsd" target="_blank"
+            ><i class="fab fa-twitter"></i
+          ></a>
+        </div>
+        <li><span>@theofficebarsd</span></li>
+      </ul>
+    </aside>
 
     <!-- contact header -->
     <header id="contact-header">
@@ -80,15 +85,15 @@
           </div>
         </div>
       </div>
-      <hr>
+      <hr />
     </header>
 
     <!-- Contact Section -->
     <section id="contact-section" class="py-2">
       <!-- Desktop view -->
-      <div class="row d-none d-md-block">
+      <div class="row">
         <div class="col-md-12 mb-4">
-          <div id="map">
+          <div id="map" class="d-none d-md-block">
             <div class="mapouter">
               <div class="gmap_canvas">
                 <iframe
@@ -125,201 +130,87 @@
           </div>
         </div>
       </div>
-      <div class="row d-none d-md-block">
-        <div class="container d-flex">
-          <div class="col-md-6">
+      <div class="row">
+        <div class="container">
+          <div class="col-md-6 float-left">
             <div class="card p-2" id="contact-card">
               <div class="card-body">
-                <div class="float-left text-center">
+                <div class="text-center float-left">
                   <img src="img/location-marker.png" alt="location marker" />
                   <a href="https://goo.gl/maps/VvRU3YWfQSH2" target="_blank">
                     <p class="pt-2">3936 30th Street</p>
                     <p>San Diego, CA 92104</p>
                   </a>
                 </div>
-                <div class="float-right text-center mt-3">
+                <div class="text-center mt-3 float-right">
                   <img src="img/rotary.png" alt="phone icon" class="mb-3" />
                   <p class="pt-2">(619) 450-6632</p>
                 </div>
               </div>
-                <div class="p-2">
-                  <div>
-                    <h3>GET IN TOUCH</h3>
-                    <p>
-                      Have any questions or comments? Please use the contact form to send us a message and we’ll get back to you, or see our page of <a href="faq" style="color:rgb(212, 58, 58)">frequently asked questions</a> and answers.</p>
-                  </div>
-                </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="card text-center p-2">
-              <div class="card-body">
-                  <form
-                  action="/"
-                  method="POST"
-                  class="col"
-                  name="Contact Us (desktop)"
-                  netlify
-                >
-                  <div>
-                    <h5 class="p-3">While you were out...</h5>
-                    <div class="row">
-                      <div class="col-md-12">
-                        <div class="form-group">
-                          <input
-                            type="text"
-                            class="form-control"
-                            placeholder="Name"
-                            name="Name"
-                          />
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <input
-                            type="text"
-                            class="form-control"
-                            placeholder="Email"
-                            name="Email"
-                          />
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <input
-                            type="text"
-                            class="form-control"
-                            placeholder="Phone #"
-                            name="Phone Number"
-                          />
-                        </div>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-md-12">
-                        <div class="form-group">
-                          <textarea
-                            class="form-control"
-                            placeholder="Message"
-                            name="Message"
-                          ></textarea>
-                        </div>
-                      </div>
-                      
-                      <div class="col-md-12">
-                        <div class="form-group">
-                          <input
-                            type="submit"
-                            class="btn btn-outline-danger btn-block"
-                            value="Submit"
-                          />
-                          <div data-netlify-recaptcha></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Mobile View -->
-      <div class="container">
-        <div class="row d-sm-none">
-          <div class="col py-4">
-            <div class="card text-center">
-              <div class="card-body">
-                <img src="img/location-marker.png" alt="location marker" />
-                <a href="https://goo.gl/maps/VvRU3YWfQSH2" target="_blank">
-                  <p class="pt-2">3936 30th Street</p>
-                  <p>San Diego, CA 92104</p>
-                  <small>(click to view in maps)</small>
-                </a>
-              </div>
-            </div>
-            <div class="card text-center">
-              <div class="card-body">
-                <img src="img/rotary.png" alt="phone icon" />
-                <p class="pt-2">(619) 450-6632</p>
-              </div>
-            </div>
-            <div class="card text-center">
-              <div class="card-body">
-                <div class="p-2">
+              <div class="p-2">
+                <div>
                   <h3>GET IN TOUCH</h3>
-                  <p>Have any questions or comments? Please use the contact form to send us a message and we’ll get back to you, or see our page of <a href="faq" style="color:rgb(212, 58, 58)">frequently asked questions</a> and answers.
-
+                  <p>
+                    Have any questions or comments? Please use the contact form
+                    to send us a message and we’ll get back to you, or see our
+                    page of
+                    <a href="faq" style="color:rgb(212, 58, 58)"
+                      >frequently asked questions</a
+                    >
+                    and answers.
                   </p>
                 </div>
               </div>
             </div>
-            <div class="card text-center">
+          </div>
+          <div class="col-md-6 float-right">
+            <div class="card text-center p-2">
               <div class="card-body">
                 <form
-                  action="/"
+                  name="contact"
+                  netlify-honeypot="bot-field"
                   method="POST"
-                  class="col-md-4"
-                  name="Contact Us (mobile)"
                   netlify
                 >
-                  <div>
-                    <h5 class="p-3">While you were out...</h5>
-                    <div class="row">
-                      <div class="col-md-12">
-                        <div class="form-group">
-                          <input
-                            type="text"
-                            class="form-control"
-                            placeholder="Name"
-                            name="Name"
-                          />
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <input
-                            type="text"
-                            class="form-control"
-                            placeholder="Email"
-                            name="Email"
-                          />
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <input
-                            type="text"
-                            class="form-control"
-                            placeholder="Phone #"
-                            name="Phone Number"
-                          />
-                        </div>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-md-12">
-                        <div class="form-group">
-                          <textarea
-                            class="form-control"
-                            placeholder="Message"
-                            name="Message"
-                          ></textarea>
-                        </div>
-                      </div>
-                      
-                      <div class="col-md-12">
-                        <div class="form-group">
-                          <input
-                            type="submit"
-                            class="btn btn-outline-danger btn-block"
-                            value="Submit"
-                          />
-                          <div data-netlify-recaptcha></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                  <p class="u-visually-hidden">
+                    <label
+                      >Don’t fill this out if you're human:
+                      <input name="bot-field"
+                    /></label>
+                  </p>
+                  <h5 class="p-3">While you were out...</h5>
+                  <span class="p-2">
+                    <input
+                      name="name"
+                      type="text"
+                      placeholder="Name"
+                      required
+                    />
+                  </span>
+                  <span class="p-2">
+                    <input
+                      name="email"
+                      type="email"
+                      placeholder="Email"
+                      required
+                    />
+                  </span>
+                  <p class="p-2">
+                    <textarea
+                      name="message"
+                      type="text"
+                      placeholder="Please leave a message"
+                      required
+                    ></textarea>
+                  </p>
+                  <button
+                    type="submit"
+                    value="Submit"
+                    id="Form-submit"
+                    class="btn btn-block btn-danger"
+                  >
+                    Submit
+                  </button>
                 </form>
               </div>
             </div>
@@ -327,88 +218,87 @@
         </div>
       </div>
     </section>
-    <!---->
 
     <!-- footer -->
     <footer id="main-footer" class="text-center">
-        <div class="container">
-          <div class="row">
-            <div class="col">
-              <!-- Begin Mailchimp Signup Form -->
-              <link
-                href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css"
-                rel="stylesheet"
-                type="text/css"
-              />
-              <div id="mc_embed_signup">
-                <form
-                  action="https://epratt.us19.list-manage.com/subscribe/post?u=e48eb00d3affd286ee30bf450&amp;id=397fc9813c"
-                  method="post"
-                  id="mc-embedded-subscribe-form"
-                  name="mc-embedded-subscribe-form"
-                  class="validate"
-                  target="_blank"
-                  novalidate
-                >
-                  <div id="mc_embed_signup_scroll">
-                    <label for="mce-EMAIL"
-                      >Sign up for our mailing list and stay up to date with
-                      upcoming events and special promotions</label
-                    >
-                    <div class="flex-row">
-                      <div class="col d-flex justify-content-center">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <!-- Begin Mailchimp Signup Form -->
+            <link
+              href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css"
+              rel="stylesheet"
+              type="text/css"
+            />
+            <div id="mc_embed_signup">
+              <form
+                action="https://epratt.us19.list-manage.com/subscribe/post?u=e48eb00d3affd286ee30bf450&amp;id=397fc9813c"
+                method="post"
+                id="mc-embedded-subscribe-form"
+                name="mc-embedded-subscribe-form"
+                class="validate"
+                target="_blank"
+                novalidate
+              >
+                <div id="mc_embed_signup_scroll">
+                  <label for="mce-EMAIL"
+                    >Sign up for our mailing list and stay up to date with
+                    upcoming events and special promotions</label
+                  >
+                  <div class="flex-row">
+                    <div class="col d-flex justify-content-center">
+                      <input
+                        type="email"
+                        value=""
+                        name="EMAIL"
+                        class="email"
+                        id="mce-EMAIL"
+                        placeholder="email address"
+                        required
+                      />
+                      <div class="clear">
                         <input
-                          type="email"
-                          value=""
-                          name="EMAIL"
-                          class="email"
-                          id="mce-EMAIL"
-                          placeholder="email address"
-                          required
+                          type="submit"
+                          value="Subscribe"
+                          name="subscribe"
+                          id="mc-embedded-subscribe"
+                          class="button"
                         />
-                        <div class="clear">
-                          <input
-                            type="submit"
-                            value="Subscribe"
-                            name="subscribe"
-                            id="mc-embedded-subscribe"
-                            class="button"
-                          />
-                        </div>
                       </div>
                     </div>
-                    <!--
-                      real people should not fill this in and expect good things - do not remove this or risk form bot signups
-                    -->
-                    <div
-                      style="position: absolute; left: -5000px;"
-                      aria-hidden="true"
-                    >
-                      <input
-                        type="text"
-                        name="b_e48eb00d3affd286ee30bf450_397fc9813c"
-                        tabindex="-1"
-                        value=""
-                      />
-                    </div>
                   </div>
-                </form>
-              </div>
-  
-              <!-- End mc_embed_signup -->
+                  <!--
+                    real people should not fill this in and expect good things - do not remove this or risk form bot signups
+                  -->
+                  <div
+                    style="position: absolute; left: -5000px;"
+                    aria-hidden="true"
+                  >
+                    <input
+                      type="text"
+                      name="b_e48eb00d3affd286ee30bf450_397fc9813c"
+                      tabindex="-1"
+                      value=""
+                    />
+                  </div>
+                </div>
+              </form>
             </div>
-          </div>
-          <div class="row">
-            <div class="col">
-              <img
-                src="img/TheOfficeText-white.png"
-                alt="The Office Bar logo"
-                class="img-fluid p-2"
-              />
-            </div>
+
+            <!-- End mc_embed_signup -->
           </div>
         </div>
-      </footer>
+        <div class="row">
+          <div class="col">
+            <img
+              src="img/TheOfficeText-white.png"
+              alt="The Office Bar logo"
+              class="img-fluid p-2"
+            />
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <script
       src="https://code.jquery.com/jquery-3.3.1.min.js"

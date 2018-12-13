@@ -40,6 +40,10 @@ h1 {
   font-family: "Filmotype Fashion";
 }
 
+.u-visually-hidden {
+  visibility: hidden;
+}
+
 #home {
   height: 100vh;
 }
@@ -151,6 +155,10 @@ h1 {
   color: #fdfdfd;
 }
 
+textarea {
+  width: 300px;
+}
+
 /* Footer */
 #main-footer {
   width: 100vw;
@@ -217,6 +225,7 @@ h1 {
 form h5 {
   font-family: "Filmotype Jupiter";
   font-size: 2.5rem;
+  margin-top: -2rem;
 }
 
 a {
