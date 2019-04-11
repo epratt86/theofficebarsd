@@ -168,9 +168,9 @@
               <div class="card-body">
                 <form
                   name="contact"
-                  netlify-honeypot="bot-field"
                   method="POST"
-                  netlify
+                  data-netlify="true"
+                  netlify-honeypot="bot-field"
                 >
                   <p class="u-visually-hidden">
                     <label
@@ -179,7 +179,7 @@
                     /></label>
                   </p>
                   <h5 class="p-3">While you were out...</h5>
-                  <span class="p-2">
+                  <span class="form-input">
                     <input
                       name="name"
                       type="text"
@@ -187,7 +187,7 @@
                       required
                     />
                   </span>
-                  <span class="p-2">
+                  <span class="form-input">
                     <input
                       name="email"
                       type="email"
@@ -195,7 +195,7 @@
                       required
                     />
                   </span>
-                  <p class="p-2">
+                  <p class="form-input">
                     <textarea
                       name="message"
                       type="text"
@@ -207,10 +207,11 @@
                     type="submit"
                     value="Submit"
                     id="Form-submit"
-                    class="btn btn-block btn-danger"
+                    class="btn btn-block btn-danger my-3"
                   >
                     Submit
                   </button>
+                  <div data-netlify-recaptcha="true"></div>
                 </form>
               </div>
             </div>

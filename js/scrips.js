@@ -39,24 +39,24 @@ let toggleNav = function() {
 };
 
 //Grab UI elements
-const cards = document.querySelectorAll(".card");
-const imageOverlay = document.querySelectorAll(".image-overlay");
+// const cards = document.querySelectorAll(".card");
+// const imageOverlay = document.querySelectorAll(".image-overlay");
 
 //Add Event Listeners
-cards.forEach(function(card) {
-  card.addEventListener("click", function(e) {
-    e.target.parentElement.childNodes[3].style.display = "block";
-  });
-});
+// cards.forEach(function(card) {
+//   card.addEventListener("click", function(e) {
+//     e.target.parentElement.childNodes[3].style.display = "block";
+//   });
+// });
 
-imageOverlay.forEach(function(overlay) {
-  overlay.addEventListener("click", function(e) {
-    if (
-      e.target.parentElement.parentElement.classList.contains("image-overlay")
-    ) {
-      e.target.parentElement.parentElement.style.display = "none";
-    } else if (e.target.parentElement.classList.contains("image-overlay")) {
-      e.target.parentElement.style.display = "none";
-    }
-  });
-});
+// imageOverlay.forEach(function(overlay) {
+//   overlay.addEventListener("click", function(e) {
+//     if (
+//       e.target.parentElement.parentElement.classList.contains("image-overlay")
+//     ) {
+//       e.target.parentElement.parentElement.style.display = "none";
+//     } else if (e.target.parentElement.classList.contains("image-overlay")) {
+//       e.target.parentElement.style.display = "none";
+//     }
+//   });
+// });

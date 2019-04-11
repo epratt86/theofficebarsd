@@ -182,20 +182,13 @@ textarea {
   background: #fff;
 }
 
-#events .card {
-  background: #000;
-  color: #fff;
-  height: 300px;
+#events span input {
+  width: 230px;
+  margin-bottom: 1rem;
 }
 
-#events img:hover {
-  opacity: 0.5;
-  cursor: pointer;
-}
-
-#events img {
-  height: 300px;
-  width: 100%;
+#rsvp {
+  margin-top: -4rem;
 }
 
 .image-overlay {
@@ -226,6 +219,15 @@ form h5 {
   font-family: "Filmotype Jupiter";
   font-size: 2.5rem;
   margin-top: -2rem;
+}
+
+.form-input input {
+  width: 200px;
+  margin-bottom: 1rem;
+}
+
+.form-input textarea {
+  width: 410px;
 }
 
 a {
@@ -300,6 +302,14 @@ a:hover {
 
   #first-card p {
     font-size: 14px;
+  }
+
+  .form-input input {
+    width: 300px;
+  }
+
+  .form-input textarea {
+    width: 300px;
   }
 
   #office-party {
